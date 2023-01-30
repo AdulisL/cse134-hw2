@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Simple demo Web page for CSE 134B" />
+	<title>My Profile page</title>
+<!--	css -->
+	<style>
+		body{
+			margin-top: 4%;
+			margin-left: 2%;
+		}
+		img {
+			width: 150px;
+			border-radius: 15%;
+			float: left;
+			margin-top: -2%;
+			margin-right: 2%;
+		}
+		hr {
+			margin-top: 2%;
+		}
+		.email {
+			font-style: italic;
+			color: indigo;
+			margin-top: -0.5%;
+		}
+		.nav-links ul li{
+			font-weight: bold;
+			justify-content: space-between;
+			display: inline-block;
+			margin-inline-end: 30px;
+		}
+		.major {
+			font-weight: bold;
+			font-size: large;
+			/*margin-top: 1.5%;*/
+		}
+		.video{
+			margin-top: 4%;
+		}
+		.history{
+			font-weight: bold;
+			font-size: large;
+			color: darkgreen;
+		}
+		.background ul li{
+			font-style: oblique;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<img src="media/prifile_image.jpg" alt="profile image">
+		<hr/>
+		<h2>Meron Asfaw</h2>
+		<p class="email">named.adulis@gmail.com</p>
+		<nav>
+			<div class="nav-links">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/masfaw/" target="_blank">LinkedIn </a></li>
+					<li><a href="https://github.com/AdulisL" target="_blank">GitHub</a></li>
+				</ul>
+			</div>
+		</nav>
+		<hr/>
+		<br>
+		<p class="major">Computer Engineer</p>
+	</header>
+
+<!--Experiences in the main-->
+	<main>
+		<section>
+			<div class="background">
+				<p class="history">Experiences</p>
+				<ul>
+					<li>RTL & FPGA Designing, QUALCOMM</li>
+					<li>Code Vetting & Verifications of OSS, QUALCOMM</li>
+					<li>Software Engineer, TUSIMPLE</li>
+				</ul>
+				<p class="history">Education</p>
+				<ul>
+					<li><a href="https://www.peralta.edu/" target="_blank">Peralta College</a> September 2018 A.S. CS & Math</li>
+					<li><a href="https://ucsd.edu/" target="_blank">UC San Diego</a> June 2022 B.S. Computer Engineering</li>
+				</ul>
+				<p class="history">Skills</p>
+				<ul>
+					<li>C/C++/Java/Python/Linux (6 years)</li>
+					<li>JavaScript/HTML/C# (1 year)</li>
+					<li>SystemVerilog/ModelSim/Quartus (3 years)</li>
+					<li>MATLAB/Mathcad/OrCAD (1 years)</li>
+				</ul>
+
+			</div>
+		</section>
+
+		<section class="video">
+			<h3>UCSD Promo Video</h3>
+			<video controls height="393" width="700">
+				<source src="media/videoplayback.mp4" type="video/mp4" />
+				<div class="error">Your browser does not support the video tag.</div>
+			</video>
+		</section>
+	</main>
+	<br/>
+</body>
+
+
+<footer>
+	<hr/>
+	<p>💯 This page was made with &hearts; by MERON 💯</p>
+</footer>
+
+</html>
