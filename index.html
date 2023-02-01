@@ -10,53 +10,31 @@
 		body{
 			margin-top: 4%;
 			margin-left: 2%;
+			background-image: url("media/BackgroundImg.jpg");
 		}
 		img {
-			width: 150px;
 			border-radius: 15%;
 			float: left;
 			margin-top: -2%;
 			margin-right: 2%;
 		}
-		hr {
-			margin-top: 2%;
-		}
-		.email {
-			font-style: italic;
-			color: indigo;
-			margin-top: -0.5%;
-		}
+
 		.nav-links ul li{
 			font-weight: bold;
 			justify-content: space-between;
 			display: inline-block;
 			margin-inline-end: 30px;
 		}
-		.major {
-			font-weight: bold;
-			font-size: large;
-			/*margin-top: 1.5%;*/
-		}
-		.video{
-			margin-top: 4%;
-		}
-		.history{
-			font-weight: bold;
-			font-size: large;
-			color: darkgreen;
-		}
-		.background ul li{
-			font-style: oblique;
-		}
+
 	</style>
 </head>
 
 <body>
 	<header>
-		<img src="media/prifile_image.jpg" alt="profile image">
+		<img src="media/prifile_image.jpg" width="150px" height="200px" alt="profile image">
 		<hr/>
 		<h2>Meron Asfaw</h2>
-		<p class="email">named.adulis@gmail.com</p>
+		<p class="email"><strong> Contact me: </strong><em>named.adulis@gmail.com</em></p>
 		<nav>
 			<div class="nav-links">
 				<ul>
@@ -67,25 +45,25 @@
 		</nav>
 		<hr/>
 		<br>
-		<p class="major">Computer Engineer</p>
+		<p class="major"><strong>Computer Engineer</strong></p>
 	</header>
 
 <!--Experiences in the main-->
 	<main>
 		<section>
 			<div class="background">
-				<p class="history">Experiences</p>
+				<p class="experiences" style="color: darkgreen"><strong>Experiences</strong></p>
 				<ul>
 					<li>RTL & FPGA Designing, QUALCOMM</li>
 					<li>Code Vetting & Verifications of OSS, QUALCOMM</li>
 					<li>Software Engineer, TUSIMPLE</li>
 				</ul>
-				<p class="history">Education</p>
+				<p class="education" style="color: darkgreen"><strong>Education</strong></p>
 				<ul>
 					<li><a href="https://www.peralta.edu/" target="_blank">Peralta College</a> September 2018 A.S. CS & Math</li>
 					<li><a href="https://ucsd.edu/" target="_blank">UC San Diego</a> June 2022 B.S. Computer Engineering</li>
 				</ul>
-				<p class="history">Skills</p>
+				<p class="skills" style="color: darkgreen"><strong>Skills</strong></p>
 				<ul>
 					<li>C/C++/Java/Python/Linux (6 years)</li>
 					<li>JavaScript/HTML/C# (1 year)</li>
@@ -95,10 +73,18 @@
 
 			</div>
 		</section>
-
+		<hr>
 		<section class="video">
-			<h3>UCSD Promo Video</h3>
-			<video controls height="393" width="700">
+			<h3>Qualcomm</h3>
+			<iframe class="video-stream"
+					src="https://www.youtube.com/embed/HBQQWcadKTw"
+					width="500"
+					height="300"
+					allowfullscreen>
+			</iframe>
+
+			<h3>UC San Diego</h3>
+			<video controls height="393" width="500">
 				<source src="media/videoplayback.mp4" type="video/mp4" />
 				<div class="error">Your browser does not support the video tag.</div>
 			</video>
@@ -110,7 +96,7 @@
 
 <footer>
 	<hr/>
-	<p>💯 This page was made with &hearts; by MERON 💯</p>
+	<p>💯 This page was made with &hearts by MERON 💯</p>
 </footer>
 
 </html>
